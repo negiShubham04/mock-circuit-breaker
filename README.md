@@ -23,4 +23,4 @@ A circuit breaker continuously observes recent calls to a dependency. If failure
 
 
 DEMO VIDEO
-![](https://github.com/user-attachments/assets/52582878-09d0-4669-bd28-b1620ac7f5dd)
+https://github.com/user-attachments/assets/52582878-09d0-4669-bd28-b1620ac7f5dd
