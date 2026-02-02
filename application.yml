@@ -1,0 +1,10 @@
+resilience4j:
+  circuitbreaker:
+    instances:
+      externalServiceCB:
+        failureRateThreshold: 50  # if 50% of calls fail then move from CLOSED to OPEN state (total = 2: slidingWindowSize). This param is also used to move from HALF_OPEN to CLOSED
+        slidingWindowSize: 2  # how many calls it will monitor and decide the failure rate when breaker is CLOSED
+        minimumNumberOfCalls: 10 #
+        waitDurationInOpenState: 10s # how much to wait before going from OPEN to HALF_OPEN state
+        permittedNumberOfCallsInHalfOpenState: 5 # only these calls are allowed, rest are blocked.
+        automaticTransitionFromOpenToHalfOpenEnabled: true
